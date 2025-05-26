@@ -1,0 +1,13 @@
+# Entorno virtual
+venv/
+__pycache__/
+
+# Archivos de datos y salida
+chromaDB/
+salida.txt
+
+# Credenciales locales
+.env
+
+# Mac/Linux swap, logs...
+*.log

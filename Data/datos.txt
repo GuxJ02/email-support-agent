@@ -1,0 +1,352 @@
+---
+Asunto: Error al enviar correo desde Outlook
+Mensaje:
+Hola equipo,
+
+Estoy intentando enviar correos desde mi cuenta de Outlook y recibo el error “No se puede conectar al servidor SMTP (550 5.1.0)” cada vez que le doy a Enviar. He comprobado la configuración de puertos y está en 587. ¿Me podéis ayudar?
+
+Gracias,
+Laura
+Respuesta:
+Hola Laura,
+
+El error 550 suele indicar un problema de autenticación. Por favor:
+1. Verifica que tu usuario y contraseña SMTP sean correctos.
+2. Asegúrate de que la opción “Requiere inicio de sesión seguro (SSL/TLS)” esté habilitada.
+3. Prueba a cambiar el puerto a 465 con SSL.
+
+Si después de esto sigue fallando, házmelo saber.
+
+Saludos,
+Soporte TI
+---
+Asunto: No puedo iniciar sesión en la intranet
+Mensaje:
+Buenas,
+
+Desde ayer no me deja iniciar sesión en la intranet corporativa. Me dice “Usuario o contraseña incorrectos” aunque estoy seguro de que son correctos. He probado a cambiar la contraseña y nada.
+
+Un saludo,
+Pedro
+Respuesta:
+Hola Pedro,
+
+He reiniciado tu cuenta y reseteado tu contraseña. Por favor:
+1. Intenta acceder con la nueva contraseña temporal que te he enviado por SMS.
+2. Cambia la contraseña en “Mi perfil” tras el primer inicio de sesión.
+3. Si sigues con problemas, envíame una captura del error.
+
+Atentamente,
+Equipo de Soporte
+---
+Asunto: La aplicación móvil se cierra al abrirla
+Mensaje:
+Hola,
+
+Tras la última actualización de la app en Android, al abrirla se cierra automáticamente tras dos segundos. He reinstalado y no cambia nada.
+
+Gracias,
+María
+Respuesta:
+Hola María,
+
+Gracias por avisar. Estamos al tanto de un fallo en la versión 3.2.1. Para solucionarlo:
+1. Desinstala la app.
+2. Instala la versión 3.2.0 desde nuestra web.
+3. Espera unos días; cuando liberemos la 3.2.2, actualiza desde Play Store.
+
+Sentimos las molestias.
+---
+Asunto: Error “500 Internal Server Error” en la web
+Mensaje:
+Buenas tardes,
+
+Al acceder a la página de informes recibo un 500 Internal Server Error. Sucede siempre al pulsar “Generar informe”.
+
+Saludos,
+Javier
+Respuesta:
+Hola Javier,
+
+Hemos detectado un bug en el módulo de generación de informes. De momento:
+1. Limpia la caché y vuelve a intentarlo.
+2. Si persiste, utiliza la versión beta en beta.tuempresa.com.
+3. Estimamos desplegar el parche esta tarde a las 18:00.
+
+Gracias por tu paciencia.
+---
+Asunto: Archivos adjuntos no se descargan
+Mensaje:
+Hola,
+
+Cuando envío un correo con adjuntos desde Gmail, el destinatario no puede descargar los ficheros. Se quedan colgados al 0%.
+
+Un saludo,
+Ana
+Respuesta:
+Hola Ana,
+
+Para solucionar la descarga bloqueada:
+1. Verifica que los archivos sean menores de 25 MB.
+2. Comprueba que Gmail no los esté subiendo a Google Drive automáticamente.
+3. Pide al destinatario que pruebe en navegador incógnito.
+
+Si continúa, prueba a comprimirlos en zip.
+---
+Asunto: No llega mi correo de confirmación
+Mensaje:
+Buenas,
+
+Me registré en vuestra plataforma pero no he recibido el correo de confirmación. He esperado más de 30 min.
+
+Gracias,
+Sergio
+Respuesta:
+Hola Sergio,
+
+El mail de confirmación puede tardar unos minutos. Mientras tanto:
+1. Revisa tu carpeta de SPAM.
+2. Añade noreply@tuempresa.com a tu lista de remitentes seguros.
+3. Si tras 1 h no llega, podemos reajustar tu cuenta manualmente. Avísame.
+
+Saludos,
+Soporte Plataforma
+---
+Asunto: La búsqueda devuelve resultados incompletos
+Mensaje:
+Equipo,
+
+La búsqueda en la base de datos no arroja todos los registros que debería. Falta la mitad de los elementos esperados.
+
+Un saludo,
+Marta
+Respuesta:
+Hola Marta,
+
+Por favor ejecuta una reconstrucción del índice de búsqueda:
+1. Ve a /admin/busqueda → “Reconstruir índice”.
+2. Espera a que finalice (50 min aprox.).
+3. Prueba de nuevo la consulta.
+
+Avísame si persiste.
+---
+Asunto: Fallo de sincronización con Google Drive
+Mensaje:
+Hola soporte,
+
+Mi carpeta de proyecto en el desktop no se sincroniza con Google Drive. El icono sigue marcando “sincronizando” eternamente.
+
+Gracias,
+Luis
+Respuesta:
+Hola Luis,
+
+Sigue estos pasos:
+1. Cierra la app de Drive.
+2. Renombra la carpeta local a “Proyecto_temp”.
+3. Abre Drive → Configuración → “Seleccionar carpeta” y apunta a Proyecto_temp.
+4. Si falla, reinstala “Backup and Sync”.
+
+Quedo pendiente.
+---
+Asunto: Página lenta al cargar
+Mensaje:
+Buenas,
+
+La web tarda más de 10 s en cargar la página principal. Antes era instantánea.
+
+Saludos,
+Raquel
+Respuesta:
+Hola Raquel,
+
+Hemos identificado que la caché en Redis estaba llena:
+1. Vacié la caché manualmente.
+2. Reinicié el servicio cache-server.
+3. Ahora la página debería cargarse en <2 s.
+
+Comprueba y me cuentas.
+---
+Asunto: No funciona la integración con Slack
+Mensaje:
+Equipo de TI,
+
+Desde esta mañana no recibimos notificaciones en Slack tras crear tickets. Reviso el webhook y está activo.
+
+Un saludo,
+Alberto
+Respuesta:
+Hola Alberto,
+
+El endpoint de Slack cambió. He actualizado la URL del webhook en /config/slack.json.
+1. Reinicia el servicio de notificaciones (systemctl restart notif-service).
+2. Crea un ticket de prueba y verifica que llega a Slack.
+
+Cierro el incidente pero reabre si falla.
+---
+Asunto: Error de permisos al acceder a la carpeta compartida
+Mensaje:
+Buenas tardes,
+
+He compartido la carpeta “Propuesta” con Juan y él no puede acceder: “403 Forbidden”.
+
+Gracias,
+Patricia
+Respuesta:
+Hola Patricia,
+
+El permiso estaba en “Solo lectura”. Lo he cambiado a “Editor”.
+Pide a Juan que recargue la carpeta.
+Si sigue con 403, comprueba que use la cuenta correcta.
+
+Saludos.
+---
+Asunto: Token de API caducado
+Mensaje:
+Equipo DevOps,
+
+La llamada a /api/v2/user retorna 401 Unauthorized. Sospecho que el token ha caducado.
+
+Un saludo,
+Fernando
+Respuesta:
+Hola Fernando,
+
+Acabo de regenerar tu token API en la consola:
+NEW_TOKEN_abcdef123456
+Reemplaza en tu .env y reinicia tu cliente.
+Avísame si todo opera correctamente.
+---
+Asunto: Error 404 en enlace de documentación
+Mensaje:
+Hola,
+
+El enlace https://docs.tuempresa.com/setup devuelve un 404. Creo que la URL ha cambiado.
+
+Gracias,
+Isabel
+Respuesta:
+Hola Isabel,
+
+Tienes razón: la URL actual es https://docs.tuempresa.com/guide/setup.
+He actualizado el enlace en la página de soporte.
+Gracias por avisar.
+---
+Asunto: Problemas con videollamada en Teams
+Mensaje:
+Buen día,
+
+No consigo compartir pantalla en una reunión de Teams desde macOS. Me da “Error al iniciar la compartición”.
+
+Saludos,
+Carla
+Respuesta:
+Hola Carla,
+
+En macOS debes dar permiso de “Grabación de pantalla”:
+1. Ve a Preferencias del Sistema → Seguridad y Privacidad.
+2. En “Privacidad” → “Grabación de pantalla”, añade Teams.
+3. Reinicia Teams.
+
+Debería solucionarse.
+---
+Asunto: El token CSRF expira muy rápido
+Mensaje:
+Hola,
+
+Al hacer POST desde el frontend me salta “Invalid CSRF token”. Parece que caduca a los 30 s.
+
+Gracias,
+Sergio
+Respuesta:
+Hola Sergio,
+
+He aumentado la expiración a 15 min en el fichero config/security.yml:
+csrf:
+  timeout: 900000
+
+Reinicia el servidor y comprueba.
+
+Un saludo.
+---
+Asunto: No puedo imprimir desde la intranet
+Mensaje:
+Buenas,
+
+Cuando pulso “Imprimir” en la intranet, abre un pdf en blanco.
+
+Gracias,
+Verónica
+Respuesta:
+Hola Verónica,
+
+Cambia el visor predeterminado de PDF en tu navegador a Acrobat Reader:
+1. Ajustes → Aplicaciones → PDF → Acrobat Reader.
+2. Limpia la caché de impresión en Ajustes del navegador.
+
+Revísalo y me comentas.
+---
+Asunto: Exceso de uso de CPU en servidor
+Mensaje:
+Equipo,
+
+El servidor prod-01 está al 100 % de CPU de forma constante. No sé qué proceso lo consume.
+
+Saludos,
+Diego
+Respuesta:
+Hola Diego,
+
+El proceso `backup-job` estaba en loop. He matado el PID 4523 y fijo el cron a las 2 AM.
+CPU vuelve al 20 %.
+Vigila hoy y dime si vuelve a dispararse.
+---
+Asunto: Bases de datos desincronizadas
+Mensaje:
+Buenas,
+
+Los datos de la réplica de lectura van con 10 min de retraso respecto al primario.
+
+Un saludo,
+Elena
+Respuesta:
+Hola Elena,
+
+Ajusté la configuración de `max_standby_delay` a 30 s en postgresql.conf y reinicié el servicio.
+Ahora la réplica va en tiempo real.
+Confirma, por favor.
+---
+Asunto: Falla autenticación OAuth con GitHub
+Mensaje:
+Equipo Dev,
+
+Al intentar login con “Sign in with GitHub” recibo “invalid_client” aunque la app está registrada correctamente.
+
+Gracias,
+Álvaro
+Respuesta:
+Hola Álvaro,
+
+El callback URL no coincidía. Lo he actualizado a:
+https://app.tuempresa.com/auth/github/callback
+Vuelve a probar el flujo OAuth.
+
+Éxitos.
+---
+Asunto: La app web lanza “Mixed Content”
+Mensaje:
+Hola,
+
+En producción sale la consola “Mixed Content: The page at 'https://...' was loaded over HTTPS, but requested an insecure resource 'http://...'.”
+
+Saludos,
+Sandra
+Respuesta:
+Hola Sandra,
+
+Cambia todas las URLs API a HTTPS. En config/frontend.js:
+apiBaseUrl = process.env.API_URL.replace('http://', 'https://');
+Vuelve a desplegar.
+Eso eliminará el error Mixed Content.
+
+Un saludo.
