@@ -11,7 +11,7 @@ from query_email import clean_email, query_rag_email
 HOST       = 'imap.gmail.com'
 USER       = os.environ.get('GMAIL_USER')
 PASS       = os.environ.get('GMAIL_APP_PWD')
-DEST_EMAIL = "example@gmail.com" # Este email es donde se reenvían los resultados de los analisis de las incidencias
+DEST_EMAIL = os.environ.get('GMAIL_DESTINATARIO') # Este email es donde se reenvían los resultados de los analisis de las incidencias
 
 def idle_listener():
     with IMAPClient(HOST) as client:
