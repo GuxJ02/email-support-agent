@@ -39,6 +39,7 @@ python insertarBD.py --reset
 
 # 6. Arranca el listener de Gmail
 python gmail_listener_email.py
+```
 
 ## 🔑 Variables de entorno
 
