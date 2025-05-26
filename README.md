@@ -64,6 +64,12 @@ Si dispones de una GPU NVIDIA, puedes instalar la build CUDA 11.8 de PyTorch par
    ```bash
    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
    ```
+3. **Comprobar que PyTorch detecta la GPU (Opcional)**  
+   ```bash
+   python -c "import torch; print('torch:', torch.__version__); print('CUDA version:', torch.version.cuda); print('cuda available:', torch.cuda.is_available())"
+   ```
+   
+
 ---
 
 
