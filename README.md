@@ -1,1 +1,41 @@
-# email-support-agent
+# 📧 email-support-agent  
+*Agente RAG que detecta incidencias en tu bandeja de Gmail, genera un borrador con LLM y lo reenvía al destinatario que elijas.*
+
+---
+
+## ⚙️ Requisitos rápidos
+
+| Necesitas | Detalles |
+|-----------|----------|
+| **Python** | 3.10 o superior |
+| **Cuenta Gmail** | Con IMAP habilitado y **App Password** |
+| **CUDA 11.8** *(opcional)* | Para acelerar con GPU NVIDIA |
+
+---
+
+## 🚀 Instalación & primer arranque
+
+```bash
+# 1. Clona el repositorio
+git clone https://github.com/tu_usuario/email-support-agent.git
+cd email-support-agent
+
+# 2. Crea y activa un entorno virtual
+python -m venv venv
+# Linux/macOS
+source venv/bin/activate
+# Windows PowerShell
+venv\Scripts\activate
+
+# 3. Instala dependencias
+pip install -r requirements.txt
+
+# 4. Copia la plantilla de variables y edítala
+cp .env.example .env
+# → pon GMAIL_USER, GMAIL_APP_PWD y DEST_EMAIL a tu gusto
+
+# 5. Indexa tus e-mails históricos (Data/*.txt) en ChromaDB
+python insertarBD.py --reset
+
+# 6. Arranca el listener de Gmail
+python gmail_listener_email.py
