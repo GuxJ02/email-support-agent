@@ -40,6 +40,7 @@ python insertarBD.py --reset
 # 6. Arranca el listener de Gmail
 python gmail_listener_email.py
 ```
+---
 
 ## 🔑 Variables de entorno
 
@@ -48,3 +49,16 @@ python gmail_listener_email.py
 | `GMAIL_USER`    | Tu dirección Gmail                     |
 | `GMAIL_APP_PWD` | App Password de 16 caracteres          |
 | `DEST_EMAIL`    | Destino al que reenviar los borradores |
+
+---
+
+## ⚡ Acelerar con GPU (opcional)
+
+# Sustituye la versión CPU-only de PyTorch por la build CUDA 11.8
+pip uninstall -y torch torchvision torchaudio
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+---
+
+
+
