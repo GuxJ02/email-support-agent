@@ -54,12 +54,15 @@ pip install -r requirements.txt
 cp .env.example .env
 # → pon GMAIL_USER, GMAIL_APP_PWD y DEST_EMAIL a tu gusto
 
-# 5. Indexa tus e-mails históricos (Data/*.txt) en ChromaDB
+# 5. Indexa tus e-mails históricos (Data/*.txt) en ChromaDB, dentro de la carpeta Datos hay un *.txt de ejemplo con emails de ejemplo,
+# puedes cambiarlo a tu gusto por un *.txt propio y ejecutar la siguiente sentencia para indexar los datos en la BBDDV
 python insertarBD.py --reset
 
 # 6. Arranca el listener de Gmail
 python gmail_listener_email.py
 ```
+
+Una vez iniciado el listener ya podrás enviar un mensaje que en caso de considerarse una incidencia pasará al llm para analizarla y mandar un correo al correo indicado
 ---
 
 ## 🔑 Variables de entorno
