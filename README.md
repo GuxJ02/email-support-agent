@@ -31,6 +31,15 @@ Sigue estos pasos una sola vez:
 # a gusto del usuario (descarga mistral para poder utilizarlo sin cambiar nada)
 ollama pull mistral
 ```
+---
+
+## 🔑 Variables de entorno (.env.example)
+ Modifica estas variables para adaptarlas
+| Variable        | Descripción                            |
+| --------------- | -------------------------------------- |
+| `GMAIL_USER`    | Tu dirección Gmail                     |
+| `GMAIL_APP_PWD` | App Password de 16 caracteres          |
+| `EMAIL_DEST`    | Destino al que reenviar los reportes   |
 
 ---
 
@@ -64,16 +73,6 @@ python gmail_listener_email.py
 ```
 Una vez iniciado el listener ya podrás enviar un mensaje que en caso de considerarse una incidencia pasará al llm para analizarlo 
 y mandar un reporte al correo indicad.
-
----
-
-## 🔑 Variables de entorno
-
-| Variable        | Descripción                            |
-| --------------- | -------------------------------------- |
-| `GMAIL_USER`    | Tu dirección Gmail                     |
-| `GMAIL_APP_PWD` | App Password de 16 caracteres          |
-| `EMAIL_DEST`    | Destino al que reenviar los borradores |
 
 ---
 
