@@ -52,11 +52,14 @@ python gmail_listener_email.py
 
 ---
 
-## ⚡ Acelerar con GPU (opcional)
+## ⚡️ Acelerar con GPU (opcional)
 
-Es posible que la cantidad de datos que quieras indexar sea muy grande y solo con cpu sea muy costoso, por tanto en caso de tener una gpu se puede instalar cuda para la acceleración de este proceso
-pip uninstall -y torch torchvision torchaudio
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+Si dispones de una GPU NVIDIA, puedes instalar la build CUDA 11.8 de PyTorch para multiplicar la velocidad de inferencia:
+
+1. **Desinstalar la versión CPU-only**  
+   ```bash
+   pip uninstall -y torch torchvision torchaudio
+   
 
 ---
 
