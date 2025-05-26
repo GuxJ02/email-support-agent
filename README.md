@@ -38,7 +38,7 @@ ollama pull mistral
 | Variable        | Descripción                                 |
 | --------------- | ------------------------------------------  |
 | `GMAIL_USER`    | Dirección de email que recibira incidencias |
-| `GMAIL_APP_PWD` | App Password de 16 caracteres               |
+| `GMAIL_APP_PWD` | App Password de 16 caracteres(`GMAIL_USER`) |
 | `EMAIL_DEST`    | Destino al que reenviar los reportes        |
 
 ---
