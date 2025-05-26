@@ -1,5 +1,5 @@
 # 📧 email-support-agent  
-*email-support-agent* es un agente autónomo que monitoriza tu bandeja de entrada de **Gmail** en tiempo real, identifica automáticamente correos que contienen **incidencias técnicas** y genera un borrador de respuesta utilizando un **modelo LLM local** (vía [Ollama](https://ollama.com/)) y técnicas de **RAG (Retrieval-Augmented Generation)**.  
+*Email-support-agent* es un agente autónomo que monitoriza tu bandeja de entrada de **Gmail** en tiempo real, identifica automáticamente correos que contienen **incidencias técnicas** y genera un borrador de respuesta utilizando un **modelo LLM local** (vía [Ollama](https://ollama.com/)) y técnicas de **RAG (Retrieval-Augmented Generation)**.  
 El sistema consulta una base de datos vectorial de incidencias anteriores (indexada con **ChromaDB** y embebida con **Sentence Transformers**) para proponer soluciones basadas en casos previos, y finalmente reenvía el borrador al correo que tú determines.
 
 Tecnologías clave: `Python`, `LangChain`, `RAG`, `Ollama`, `ChromaDB`, `IMAPClient`, `transformers`, `hugging-face`.
