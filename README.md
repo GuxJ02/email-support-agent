@@ -8,10 +8,27 @@
 | Necesitas | Detalles |
 |-----------|----------|
 | **Python** | 3.10 o superior |
-| **Cuenta Gmail** | Con IMAP habilitado y **App Password** |
-| **CUDA 11.8** *(opcional)* | Para acelerar con GPU NVIDIA |
+| **Ollama** | Servidor local de LLM (`ollama serve`) |
+| **Cuenta Gmail** | IMAP habilitado + **App Password** |
+| **CUDA 11.8** *(opc.)* | Para acelerar PyTorch con GPU NVIDIA |
 
 ---
+
+## 🧠 Modelo LLM local (Ollama)
+
+Este proyecto llama a **Ollama** en `http://localhost:11434`.  
+Sigue estos pasos una sola vez:
+
+```bash
+# Instala Ollama (macOS / Linux / Windows)
+curl https://ollama.ai/install.sh | sh          # o descarga desde la web
+
+# Inicia el servicio
+ollama serve &      # deja el demonio corriendo
+
+# Descarga un modelo ligero y gratuito, por ejemplo Mistral
+ollama pull mistral
+```
 
 ## 🚀 Instalación & primer arranque
 
