@@ -73,7 +73,7 @@ y mandar un reporte al correo indicad.
 | --------------- | -------------------------------------- |
 | `GMAIL_USER`    | Tu dirección Gmail                     |
 | `GMAIL_APP_PWD` | App Password de 16 caracteres          |
-| `DEST_EMAIL`    | Destino al que reenviar los borradores |
+| `EMAIL_DEST`    | Destino al que reenviar los borradores |
 
 ---
 
