@@ -23,7 +23,7 @@ Sigue estos pasos una sola vez:
 # Instala Ollama (macOS / Linux / Windows)
  https://ollama.com/  # Descargalo desde la propia web
 
-# Descarga un modelo ligero y gratuito, por ejemplo Mistral
+# Este proyecto utiliza el modelo Mistral pero se puede cambiar a gusto del usuario (descarga mistral para poder utilizarlo sin cambiar nada)
 ollama pull mistral
 ```
 
