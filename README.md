@@ -27,6 +27,8 @@ Sigue estos pasos una sola vez:
 ollama pull mistral
 ```
 
+---
+
 ## 🚀 Instalación & primer arranque
 
 ```bash
