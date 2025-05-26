@@ -21,10 +21,7 @@ Sigue estos pasos una sola vez:
 
 ```bash
 # Instala Ollama (macOS / Linux / Windows)
-curl https://ollama.ai/install.sh | sh          # o descarga desde la web
-
-# Inicia el servicio
-ollama serve &      # deja el demonio corriendo
+ https://ollama.com/  # Descargalo desde la propia web
 
 # Descarga un modelo ligero y gratuito, por ejemplo Mistral
 ollama pull mistral
