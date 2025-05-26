@@ -61,8 +61,9 @@ python insertarBD.py --reset
 # 6. Arranca el listener de Gmail
 python gmail_listener_email.py
 ```
+Una vez iniciado el listener ya podrás enviar un mensaje que en caso de considerarse una incidencia pasará al llm para analizarla 
+y mandar un correo al correo indicado.
 
-Una vez iniciado el listener ya podrás enviar un mensaje que en caso de considerarse una incidencia pasará al llm para analizarla y mandar un correo al correo indicado
 ---
 
 ## 🔑 Variables de entorno
