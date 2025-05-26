@@ -34,12 +34,12 @@ ollama pull mistral
 ---
 
 ## 🔑 Variables de entorno (.env.example)
- Modifica estas variables para adaptarlas
-| Variable        | Descripción                            |
-| --------------- | -------------------------------------- |
-| `GMAIL_USER`    | Tu dirección Gmail                     |
-| `GMAIL_APP_PWD` | App Password de 16 caracteres          |
-| `EMAIL_DEST`    | Destino al que reenviar los reportes   |
+ Modifica estas variables para adaptarlas a tus correos
+| Variable        | Descripción                                 |
+| --------------- | ------------------------------------------  |
+| `GMAIL_USER`    | Dirección de email que recibira incidencias |
+| `GMAIL_APP_PWD` | App Password de 16 caracteres               |
+| `EMAIL_DEST`    | Destino al que reenviar los reportes        |
 
 ---
 
