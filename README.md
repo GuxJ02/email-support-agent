@@ -54,7 +54,7 @@ python gmail_listener_email.py
 
 ## ⚡ Acelerar con GPU (opcional)
 
-# Sustituye la versión CPU-only de PyTorch por la build CUDA 11.8
+Es posible que la cantidad de datos que quieras indexar sea muy grande y solo con cpu sea muy costoso, por tanto en caso de tener una gpu se puede instalar cuda para la acceleración de este proceso
 pip uninstall -y torch torchvision torchaudio
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
