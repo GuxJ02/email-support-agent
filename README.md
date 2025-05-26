@@ -39,3 +39,11 @@ python insertarBD.py --reset
 
 # 6. Arranca el listener de Gmail
 python gmail_listener_email.py
+
+## 🔑 Variables de entorno
+
+| Variable        | Descripción                            |
+| --------------- | -------------------------------------- |
+| `GMAIL_USER`    | Tu dirección Gmail                     |
+| `GMAIL_APP_PWD` | App Password de 16 caracteres          |
+| `DEST_EMAIL`    | Destino al que reenviar los borradores |
