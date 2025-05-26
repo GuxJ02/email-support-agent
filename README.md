@@ -17,7 +17,7 @@
 
 ```bash
 # 1. Clona el repositorio
-git clone https://github.com/tu_usuario/email-support-agent.git
+git clone https://github.com/GuxJ02/email-support-agent.git
 cd email-support-agent
 
 # 2. Crea y activa un entorno virtual
