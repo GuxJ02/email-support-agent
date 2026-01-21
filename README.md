@@ -7,7 +7,7 @@ Tecnologías clave: `Python`, `LangChain`, `RAG`, `Ollama`, `ChromaDB`, `IMAPCli
 
 ---
 
-## ⚙️ Requisitos rápidos
+## Requisitos rápidos
 
 | Necesitas | Detalles |
 |-----------|----------|
@@ -18,7 +18,7 @@ Tecnologías clave: `Python`, `LangChain`, `RAG`, `Ollama`, `ChromaDB`, `IMAPCli
 
 ---
 
-## 🧠 Modelo LLM local (Ollama)
+## Modelo LLM local (Ollama)
 
 Este proyecto llama a **Ollama** en `http://localhost:11434`.  
 Sigue estos pasos una sola vez:
@@ -33,7 +33,7 @@ ollama pull mistral
 ```
 ---
 
-## 🔑 Variables de entorno (.env.example)
+## Variables de entorno (.env.example)
  Modifica estas variables para adaptarlas a tus correos
 | Variable        | Descripción                                 |
 | --------------- | ------------------------------------------  |
@@ -43,7 +43,7 @@ ollama pull mistral
 
 ---
 
-## 🚀 Instalación & primer arranque
+## Instalación & primer arranque
 
 ```bash
 # 1. Clona el repositorio
@@ -76,7 +76,7 @@ y mandar un reporte al correo indicad.
 
 ---
 
-## ⚡️ Acelerar con GPU (opcional)
+## Acelerar con GPU (opcional)
 
 Si dispones de una GPU NVIDIA, puedes instalar la build CUDA 11.8 de PyTorch para multiplicar la velocidad de inferencia:
 
