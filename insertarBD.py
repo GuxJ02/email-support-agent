@@ -17,7 +17,7 @@ from get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chromaDB"
 DATA_PATH   = "Data"
-MAX_BATCH   = 5461  # Chroma tolera ~5 k docs por lote
+MAX_BATCH   = 5461  
 
 def load_documents():
     docs = []
@@ -30,7 +30,7 @@ def load_documents():
 
 def split_documents(docs):
     splitter = RecursiveCharacterTextSplitter(
-        chunk_size      = 800,    # como tenías antes
+        chunk_size      = 800,    
         chunk_overlap   = 80,
         separators      = ["\n\n", "\n", ". "],
         length_function = len
